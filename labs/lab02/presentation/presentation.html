@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru-RU" xml:lang="ru-RU">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Хан Г. И." />
+  <title>Лабораторная работа №2</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Лабораторная работа №2</h1>
+<p class="subtitle">Операционные системы</p>
+<p class="author">Хан Г. И.</p>
+</header>
+<h1 id="информация">Информация</h1>
+<h2 id="докладчик">Докладчик</h2>
+<div class="columns" data-align="center">
+<div class="column" style="width:70%;">
+<ul>
+<li>Хан Георгий Игоревич</li>
+<li>Студент НКАбд-06-25</li>
+<li>я гоша</li>
+<li>Российский университет дружбы народов</li>
+<li><a href="mailto:1032253504@rudn.ru">1032253504@rudn.ru</a></li>
+</ul>
+</div>
+</div>
+<h1 id="цель-работы">Цель работы</h1>
+<p>Изучить идеологию и применение средств контроля версий и освоить
+умения по работе с git.</p>
+<h1 id="задание">Задание</h1>
+<ul>
+<li>базовая конфигурация для работы с git</li>
+<li>ключ SSH</li>
+<li>ключ PGP</li>
+<li>подписи git</li>
+<li>каталог для выполнения заданий</li>
+</ul>
+<h1 id="теоретическое-введение">Теоретическое введение</h1>
+<p>Системы контроля версий (Version Control System, VCS) применяются при
+работе нескольких человек над одним проектом. Обычно основное дерево
+проекта хранится в локальном или удалённом репозитории, к которому
+настроен доступ для участников проекта. При внесении изменений в
+содержание проекта система контроля версий позволяет их фиксировать,
+совмещать изменения, произведённые разными участниками проекта,
+производить откат к любой более ранней версии проекта, если это
+требуется.</p>
+<p>В классических системах контроля версий используется централизованная
+модель, предполагающая наличие единого репозитория для хранения файлов.
+Выполнение большинства функций по управлению версиями осуществляется
+специальным сервером. Участник проекта (пользователь) перед началом
+работы посредством определённых команд получает нужную ему версию
+файлов. После внесения изменений, пользователь размещает новую версию в
+хранилище. При этом предыдущие версии не удаляются из центрального
+хранилища и к ним можно вернуться в любой момент. Сервер может сохранять
+не полную версию изменённых файлов, а производить так называемую
+дельта-компрессию — сохранять только изменения между последовательными
+версиями, что позволяет уменьшить объём хранимых данных.</p>
+<h1 id="выполнение-лабораторной-работы">Выполнение лабораторной
+работы</h1>
+<p>Произвожу базовую настройку git. (рис. 1)</p>
+<figure id="fig:001">
+<img src="image/1.png" style="width:70.0%"
+alt="Пример конфигурации git" />
+<figcaption aria-hidden="true">Пример конфигурации git</figcaption>
+</figure>
+<p>Создаю ssh и gpg ключи. (рис. 2)</p>
+<figure id="fig:002">
+<img src="image/2.png" style="width:70.0%" alt="Генерация ключей" />
+<figcaption aria-hidden="true">Генерация ключей</figcaption>
+</figure>
+<p>Экспортирую gpg ключ для авторизации на github. (рис. 3)</p>
+<figure id="fig:004">
+<img src="image/3.png" style="width:70.0%" alt="Экспорт ключа" />
+<figcaption aria-hidden="true">Экспорт ключа</figcaption>
+</figure>
+<p>Авторизуюсь на github для работы через терминал. (рис. 4)</p>
+<figure id="fig:006">
+<img src="image/4.png" style="width:70.0%"
+alt="Авторизация на github" />
+<figcaption aria-hidden="true">Авторизация на github</figcaption>
+</figure>
+<p>Создаю директорию курса по шаблону. (рис. 5)</p>
+<figure id="fig:007">
+<img src="image/5.png" style="width:70.0%"
+alt="Создание директрории курса" />
+<figcaption aria-hidden="true">Создание директрории курса</figcaption>
+</figure>
+<p>Настраиваю рабочую директорию. (рис. 6)</p>
+<figure id="fig:008">
+<img src="image/6.png" style="width:70.0%" alt="Настройка директории" />
+<figcaption aria-hidden="true">Настройка директории</figcaption>
+</figure>
+<h1 id="выводы">Выводы</h1>
+<p>В результате выполнения данной лабораторной работы я научился базовым
+навыкам работы с git: создание репозиториев, ssh и gpg ключе, настройка
+каталога курса и авторизация gh.</p>
+</body>
+</html>
